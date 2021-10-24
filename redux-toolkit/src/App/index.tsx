@@ -6,14 +6,22 @@ import React, {
   useState,
 } from "react";
 import { useDispatch, useSelector } from "react-redux";
+// import {
+//   createTodoActionCreator,
+//   deleteTodoActionCreator,
+//   editTodoActionCreator,
+//   selectTodoActionCreator,
+//   toggleTodoActionCreator,
+// } from "../redux-og";
 import {
   createTodoActionCreator,
   deleteTodoActionCreator,
   editTodoActionCreator,
   selectTodoActionCreator,
   toggleTodoActionCreator,
-} from "../redux-og";
-import { Todo, State } from "../type";
+} from "../redux-toolkit";
+
+import { State } from "../type";
 import "./App.css";
 
 const App = function() {
